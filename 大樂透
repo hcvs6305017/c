@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main(int argc, char *argv[]) {
+	srand(time(NULL));
+	int m[6],x,i;
+	m[6]=rand()%49+1;
+	printf("請輸入您的數:");
+	scanf("%d",&x);
+	
+	for(i=0;i<6;i++){
+	m[i]=rand()%49+1;
+	printf("m[%d]=%d\n",i,m[i]);
+	}
+	
+	
+	printf("變數為%2d,輸入數為%2d",m[i],x);
+	if(m==x)
+	printf("您猜的正確");
+	else
+	printf("您猜的錯誤");
+	return 0;
+}
